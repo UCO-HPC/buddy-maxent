@@ -1,0 +1,36 @@
+#!/bin/bash
+
+<%- gpu = context.buddy_queue.include?("gpu") -%>
+
+# Cleanup any loaded modules
+module purge
+
+# Set working directory
+cd "${HOME}"
+
+# Launch Xfce Window Manager and Panel
+
+(
+  module restore
+  export XDG_CONFIG_HOME="<%= session.staged_root.join("config") %>"
+  export XDG_CACHE_HOME="$(mktemp -d)"
+  xfwm4 --compositor=off --daemon --sm-client-disable
+  xsetroot -solid "#D3D3D3"
+  xfsettingsd --sm-client-disable
+  xfce4-panel --sm-client-disable
+) &
+
+# Start Maxent
+
+# Load the required environment
+module load Maxent
+
+# Disable checking of the lock file. This will prevent errors should 
+# the previous session not be cleaned up correctly
+
+
+# Launch ANSYS Workbench
+module list
+set -x
+#java -mx512m -jar maxent.jar
+maxent.sh

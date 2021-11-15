@@ -1,0 +1,8 @@
+---
+name: Maxent
+category: Interactive Apps
+subcategory: GUIs
+role: batch_connect
+description: "This app will launch [Maxent] within a [Turbo VNC] server
+  on Buddy. \r\n\r\n[Maxent]: https://https://biodiversityinformatics.amnh.org/open_source/maxent/\r\n[Turbo VNC]: https://www.turbovnc.org/\r\n"
+icon: ''
