@@ -2,6 +2,7 @@
 cluster: "buddy"
 form:
   - version
+  - modules
   - buddy_queue
   - buddy_num_hours
   - buddy_num_cores
@@ -14,6 +15,7 @@ attributes:
     help: "This defines the version of Maxent you want to load."
     options:
       - [ "3.4.4", "Maxent/3.4.4" ]
+  modules: ""
   buddy_queue:
     label: Queue
     help: "Queue your job will run on"
