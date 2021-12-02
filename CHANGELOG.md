@@ -3,10 +3,10 @@ Changes to this project that result in an increase of the major and or minor rev
 
 ## [Unreleased] - Unknown
 
-## [1.1.0] - 2021-12-02
+## [v1.1.0] - 2021-12-02
 - Selecting version actually does something
 
-## [1.0.0] - 2021-11-15
+## [v1.0.0] - 2021-11-15
 ### Added
 - Initial commit of current code
 
