@@ -20,16 +20,26 @@ cd "${HOME}"
   xfce4-panel --sm-client-disable
 ) &
 
+#
 # Start Maxent
+#
 
-# Load the required environment
-module load Maxent
+# Clear current modules and load the requested version
+module purge
+module load <%= context.version %>
 
-# Disable checking of the lock file. This will prevent errors should 
-# the previous session not be cleaned up correctly
+<%- unless context.modules.blank? -%> 
+# Purge the module environment to avoid conflicts
+module purge
 
+# Load the require modules
+module load <%= context.modules %>
 
-# Launch ANSYS Workbench
+# List loaded modules
+module list
+<%- end -%>
+
+# Launch Maxent
 module list
 set -x
 #java -mx512m -jar maxent.jar

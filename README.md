@@ -1,6 +1,6 @@
 # Buddy OnDemand - Maxent
 
-[![GitHub Release](https://img.shields.io/github/v/release/UCO-HPC/buddy_maxent?style=flat-square)](https://github.com/UCO-HPC/buddy_ansys/blob/main/CHANGELOG.md)
+[![GitHub Release](https://img.shields.io/github/v/release/UCO-HPC/buddy_maxent?style=flat-square)](https://github.com/UCO-HPC/buddy_maxent/blob/main/CHANGELOG.md)
 [![GitHub License](https://img.shields.io/github/license/UCO-HPC/buddy_maxent?style=flat-square)](https://opensource.org/licenses/MIT)
 
 An app designed for UCO's OnDemand that launches Maxent in a desktop environment.
@@ -31,7 +31,7 @@ You can either use the "New App" feature in the Open OnDemand development tab, o
 
 ## Contributing
 
-Please note that this application is specific to our university. Please feel free to copy and use as needed according to the associated license. IF you discover a big during use, please feel free to create a new branch and submit a pull request. 
+Please note that this application is specific to our university. Please feel free to copy and use as needed according to the associated license. If you discover a big during use, please feel free to create a new branch and submit a pull request. 
 
 ## License
 
