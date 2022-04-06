@@ -39,8 +39,15 @@ module load <%= context.modules %>
 module list
 <%- end -%>
 
+# Set memory for maxent
+memory=<%= 3*context.buddy_num_cores.to_i %>
+memoption="-mx"$memory"g"
+
+echo $memory
+echo $memoption
+
 # Launch Maxent
 module list
 set -x
-#java -mx512m -jar maxent.jar
-maxent.sh
+java $memoption -jar $MAXENT_ROOT/maxent.jar
+# maxent.sh
